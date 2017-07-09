@@ -3,14 +3,14 @@ body {
   font-family: 'Roboto',sans-serif;
   margin: 0;
   background: #eaeaea;
+  clear: both;
 }
 
 .index {
-  width: 80%;
+  width: 70%;
   text-align: center;
   padding: 60px;
-  background: #d89ddc;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: rgba(0,0,0,.7);
@@ -18,9 +18,62 @@ body {
   text-shadow: 1px 1px 0px #4f34da,
                2px 2px 0px #4f34da,
                3px 3px 0px #4f34da;
-  margin: 40px auto;
+  margin: 70px auto;
+  border: 1px solid transparent;
+}
+
+.effect1 {
+  background: #d89ddc;
   box-shadow: 30px 0px 0px 0px rgba(0,0,0,.1),
               0px 30px 0px 0px rgba(0,0,0,.1),
               -30px 0px 0px 0px rgba(0,0,0,.1),
               0px -30px 0px 0px rgba(0,0,0,.1);
+}
+
+.effect2 {
+  background: #a6d89a;
+  box-shadow: inset 30px 0px 0px 0px rgba(0,0,0,.1),
+              inset 0px 30px 0px 0px rgba(0,0,0,.1),
+              inset -30px 0px 0px 0px rgba(0,0,0,.1),
+              inset 0px -30px 0px 0px rgba(0,0,0,.1);
+}
+
+.effect3 {
+  background: #f2876d;
+  box-shadow: 0px 0px 80px 0px rgba(0,0,0,.6),
+              inset 0px 0px 40px 0px rgba(0,0,0,.1);
+}
+
+.effect4 {
+  background: #c82d9e;
+  box-shadow: 8px 8px 0px 0px rgba(0,0,0,.8),
+              -8px -8px 0px 0px rgba(0,0,0,.8);
+}
+
+.effect5 {
+  background: #4f8ec1;
+  position: relative;
+}
+
+.effect5:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 100px;
+  bottom: 19px;
+  left: 8px;
+  width: 60%;
+  max-width: 350px;
+  background: transparent;
+  box-shadow: 0px 30px 40px 0px #666;
+  transform: rotate(-5deg);
+}
+
+.effect5:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  bottom: 19px;
+  width: 60%;
+
 }
